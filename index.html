@@ -48,10 +48,10 @@
       console.log(`Score: You ${humanScore} - ${computerScore} Computer`);
     }
 
-  
-    while(humanChoice !== "quit"){
+    let humanSelection = ""
+    while(humanSelection !== "quit"){
    
-      const humanSelection = getHumanChoice();
+      humanSelection = getHumanChoice();
       const computerSelection = getComputerChoice();
 
       console.log("You chose:", humanSelection);
